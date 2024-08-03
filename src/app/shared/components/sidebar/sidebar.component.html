@@ -5,6 +5,7 @@
   <div class="list-group list-reset">
     <button
       *ngFor="let gif of tags"
+      (click)="searchTag(gif)"
       class="list-group-item list-group-item-action"
     >
       {{ gif | titlecase }}
